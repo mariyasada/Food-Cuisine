@@ -49,7 +49,8 @@ export default function App() {
                 padding: "0.5rem 1rem",
                 margin: "1rem 0.5rem",
                 border: "1px solid #EF4444",
-                color: "#EF4444"
+                color: "#EF4444",
+                boxShadow: "3px 3px #DC2626"
               }}
             >
               {foodcuisine}
@@ -70,7 +71,8 @@ export default function App() {
                   border: "1px solid #EF4444",
                   width: "70%",
                   margin: "1rem 3rem",
-                  borderRadius: "0.5rem"
+                  borderRadius: "0.5rem",
+                  boxShadow: "3px 3px #EF4444"
                 }}
               >
                 <div style={{ fontSize: "larger", color: "#EF4444" }}>
