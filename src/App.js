@@ -4,16 +4,60 @@ import { useState } from "react";
 
 const foodDB = {
   Chinese: [
-    { name: "Manchaow soup", rating: "3.5/5" },
-    { name: "Chinese Sizzler", rating: "4.5/5" }
+    {
+      name: "Manchaow soup",
+      Description: "The origin of Manchow soup is Meghalaya",
+      rating: "3.5/5"
+    },
+    {
+      name: "Chinese Sizzler",
+      Description: "A nice place to hang out for Chinese street food.",
+      rating: "4.5/5"
+    },
+    {
+      name: "Dim Sums",
+      Description:
+        "Dim sum is a traditional Chinese meal made up of small plates of dumplings",
+      rating: "5/5"
+    }
   ],
   Indian: [
-    { name: "Chhole Bhature", rating: "5/5" },
-    { name: "Dal Makhni", rating: "4.5/5" }
+    {
+      name: "Chhole Bhature",
+      Description: "Famous indian dish of panjab",
+      rating: "5/5"
+    },
+    {
+      name: "Dal Makhni",
+      Description:
+        "made by simmering whole black lentils & red kidney beans with spices, butter & cream.",
+      rating: "4.5/5"
+    },
+    {
+      name: "Biryani",
+      Description: " biryani is a spiced mix of meat and rice",
+      rating: "4.5/5"
+    }
   ],
   Italian: [
-    { name: "Lasagna", rating: "4/5" },
-    { name: "Pizza", rating: "3.5/5" }
+    {
+      name: "Lasagna",
+      Description:
+        "lasagna really has only three components — the noodles, sauce and cheese.",
+      rating: "4/5"
+    },
+    {
+      name: "Pizza",
+      Description:
+        "lattened bread dough spread with a savory mixture usually including tomatoes and cheese",
+      rating: "3.5/5"
+    },
+    {
+      name: "Mushroom Risotto",
+      Description:
+        "a northern Italian rice dish cooked with broth until it reaches a creamy consistency",
+      rating: "3.5/5"
+    }
   ]
 };
 
@@ -79,6 +123,9 @@ export default function App() {
                   {food.name}
                 </div>
                 <div style={{ fontSize: "small", color: "#F87171" }}>
+                  {food.Description}
+                </div>
+                <div style={{ fontSize: "small", color: "#F87171" }}>
                   {food.rating}
                 </div>
               </li>
@@ -89,3 +136,4 @@ export default function App() {
     </div>
   );
 }
+
